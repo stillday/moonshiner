@@ -10,7 +10,9 @@ function moonshiner_enqueue_scripts() {
     
     wp_enqueue_style(
         'moonshiner-style',
-        get_template_directory_uri() . '/build/style-index.css'
+        get_template_directory_uri() . '/build/index.css',
+        [],
+        '1.0.0'
     );
 }
 
