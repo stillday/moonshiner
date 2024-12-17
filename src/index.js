@@ -1,3 +1,4 @@
+import './styles/main.scss';
 import { createRoot, createElement } from '@wordpress/element';
 import App from './App';
 
