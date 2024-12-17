@@ -1,8 +1,5 @@
 <?php
-echo "functions.php geladen!";
-
 function moonshiner_enqueue_scripts() {
-    echo "Test: Die functions.php wird geladen!";
     wp_enqueue_script(
         'moonshiner_react-app',
         get_template_directory_uri() . '/build/index.js',
