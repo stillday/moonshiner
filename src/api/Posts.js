@@ -9,12 +9,26 @@ class Posts extends Component {
     componentDidMount() {
 
         const apiBaseUrl = window?.wpApiSettings?.root || '';
+        const nonce = window?.wpApiSettings?.nonce || '';
+
+        if (!apiBaseUrl || !nonce) {
+            this.setState({
+                error: new Error('API settings are missing or incomplete.'),
+                isLoading: false,
+            });
+            return;
+        }
+
         const postsEndpoint = `${apiBaseUrl}wp/v2/posts`;
 
-        fetch(postsEndpoint)
+        fetch(postsEndpoint, {
+            headers: {
+                'X-WP-Nonce': nonce,
+            }
+        })
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Somehing went wrong');
+                    throw new Error('Something went wrong');
                 }
                 return response.json();
             })
@@ -26,20 +40,20 @@ class Posts extends Component {
         if (error) {
             return createElement(
                 'div',
-                { className: error },
+                { className: 'error' },
                 `Error: ${error.message}`
             );
         }
         if (isLoading) {
             return createElement(
                 'div',
-                { className: loading },
+                { className: 'loading' },
                 `Loading...`
             );
         }
         return createElement(
             'div',
-            { className: postContainer},
+            { className: 'postContainer'},
             posts.map(post =>
                 createElement(
                     'article',
