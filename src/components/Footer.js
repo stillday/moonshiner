@@ -1,14 +1,14 @@
-import { Component } from "@wordpress/element";
+import { Component, createElement } from "@wordpress/element";
 
 class Footer extends Component {
     render() {
         const { darkTheme } = this.props;
-        const footerClass = darkTheme ? 'header dark' : 'header light';
+        const footerClass = darkTheme ? 'footer dark' : 'footer light';
 
-        return (
-            <footer className={footerClass}>
-                @ {new Date().getFullYear()} JDD Theme
-            </footer>
+        return createElement(
+            'footer',
+            { className: footerClass },
+            `@ ${new Date().getFullYear()} JDD Theme`
         );
     }
 }

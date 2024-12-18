@@ -1,4 +1,4 @@
-import { Component } from "@wordpress/element";
+import { Component, createElement } from "@wordpress/element";
 
 class Header extends Component {
     render() {
@@ -6,11 +6,15 @@ class Header extends Component {
 
         const headerClass = darkTheme ? 'header dark' : 'header light';
 
-        return (
-            <header className={headerClass}>
-                <div>Moonshiner Theme</div>
-                <button onClick={toggleTheme}>{darkTheme ? 'Light Mode' : 'Dark Mode'}</button>
-            </header>
+        return createElement(
+            'header',
+            { className: headerClass },
+            createElement('div', null, 'Moonshiner Theme'),
+            createElement(
+                'button',
+                { onClick: toggleTheme },
+                darkTheme ? 'Light Mode' : 'Dark Mode'
+            )
         );
     }
 }
