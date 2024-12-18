@@ -1,6 +1,7 @@
 import { createElement, Component } from "@wordpress/element";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Posts from './api/Posts';
 
 export default class App extends Component {
     state = {
@@ -23,6 +24,7 @@ export default class App extends Component {
                 { className: `main ${darkTheme ? 'dark' : 'light'}`,},
                 createElement('h1', { className: 'main-title' }, 'Hello, Wordpress and React'),
                 createElement('p', { className: 'main-text'}, 'Main Content Goes Here'),
+                createElement(Posts, { className: 'posts'}),
             ),
             createElement(Footer, { darkTheme })
         );
