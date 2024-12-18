@@ -14,6 +14,11 @@ function moonshiner_enqueue_scripts() {
         [],
         '1.0.0'
     );
+
+    wp_localize_script('moonshiner_react-app', 'wpApiSettings', [
+        'root' => esc_url_raw(rest_url()),
+        'nonce' => wp_create_nonce('wp_rest'),
+    ]);
 }
 
 add_action('wp_enqueue_scripts', 'moonshiner_enqueue_scripts');
