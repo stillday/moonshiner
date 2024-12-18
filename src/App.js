@@ -20,9 +20,9 @@ export default class App extends Component {
             createElement(Header, { darkTheme, toggleTheme: this.toggleTheme }),
             createElement(
                 'main',
-                { className: `app-main ${darkTheme ? 'dark' : 'light'}`,},
-                createElement('h1', { className: 'main-tiotle' }, 'Hello, Wordpress and React'),
-                createElement('p', null, 'Main Content Goes Here'),
+                { className: `main ${darkTheme ? 'dark' : 'light'}`,},
+                createElement('h1', { className: 'main-title' }, 'Hello, Wordpress and React'),
+                createElement('p', { className: 'main-text'}, 'Main Content Goes Here'),
             ),
             createElement(Footer, { darkTheme })
         );
