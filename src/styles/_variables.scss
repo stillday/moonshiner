@@ -1,0 +1,31 @@
+:root {
+    --color-black: #000000;
+    --color-cyan-bluish-gray: #abb8c3;
+    --color-white: #ffffff;
+    --color-pale-pink: #f78da7;
+    --color-vivid-red: #cf2e2e;
+    --color-luminous-vivid-orange: #ff6900;
+    --color-luminous-vivid-amber: #fcb900;
+    --color-light-green-cyan: #7bdcb5;
+    --color-vivid-green-cyan: #00d084;
+    --color-pale-cyan-blue: #8ed1fc;
+    --color-vivid-cyan-blue: #0693e3;
+    --color-vivid-purple: #9b51e0;
+
+    --gradient-vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+    --gradient-light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+    --gradient-luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+    --gradient-luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+    --gradient-cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    --font-size-small: 13px;
+    --font-size-medium: 20px;
+    --font-size-large: 36px;
+    --font-size-x-large: 42px;
+    --spacing-20: 0.44rem;
+    --spacing-30: 0.67rem;
+    --spacing-40: 1rem;
+    --spacing-50: 1.5rem;
+    --spacing-60: 2.25rem;
+    --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --shadow-deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+}
