@@ -16,6 +16,8 @@ function moonshiner_enqueue_scripts() {
     );
 
     $current_user = wp_get_current_user();
+    $user_name = $current_user->display_name;
+    $user_avatar = get_avatar_url($current_user->ID);
     $roles = !empty($current_user->roles) && is_array($current_user->roles)
         ? $current_user->roles[0]
         : 'guest';
@@ -25,6 +27,10 @@ function moonshiner_enqueue_scripts() {
         'nonce' => wp_create_nonce('wp_rest'),
         'context' => is_admin() ? 'dashboard' : 'site',
         'roles' => $roles,
+        'user' => [
+            'name' => $user_name,
+            'avatar' => $user_avatar
+        ],
     ]);
 }
 
