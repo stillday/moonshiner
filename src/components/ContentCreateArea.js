@@ -14,7 +14,7 @@ const actions = {
         { id: "10", label: "Einstellungen", url: "/wp-admin/options-general.php", icon: "dashicons-admin-settings" },
     ],
 
-    editor: [
+    author: [
         { id: "1", label: "Beitrag erstellen", url: "/wp-admin/post-new.php", icon: "dashicons-edit" },
         { id: "2", label: "Seiten erstellen", url: "/wp-admin/post-new.php?post_type=page", icon: "dashicons-admin-page" },
         { id: "3", label: "Medien hinzufügen", url: "/wp-admin/media-new.php", icon: "dashicons-admin-media" },
