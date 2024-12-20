@@ -1,73 +1,72 @@
+Sure! Here's the English version:
+
 # Moonshiner
 
-Ein individuelles WordPress-Dashboard, erstellt mit React.
+A custom WordPress dashboard built with React.
 
-## Projektübersicht
-Das Ziel dieses Projekts ist es, ein maßgeschneidertes Dashboard für WordPress zu entwickeln, das mit React erstellt wurde. Es wurde besonderer Wert auf die Integration moderner Technologien wie SCSS und die Erstellung dynamischer APIs gelegt, um ein funktionales und ansprechendes Design zu bieten.
+## Project Overview
+The goal of this project is to develop a tailored dashboard for WordPress, created using React. Emphasis was placed on integrating modern technologies such as SCSS and creating dynamic APIs to deliver a functional and visually appealing design.
 
 ## Features
-- **React-Integration in WordPress**: Implementierung von React basierend auf der Anleitung von Kinsta und der Dokumentation von @wordpress/script.
-- **Individuelles Design**: Header, Footer und Dashboard-Komponenten wurden individuell gestaltet und eingebunden.
-- **API-Integration**: Dynamische Abfrage von URLs und Sicherheitsfunktionen wurden implementiert.
-- **Benutzerfreundlichkeit**: Ein leicht verständliches Design mit Schnellstartpunkten, Benutzerinformationen und weiteren Funktionen.
+- **React Integration in WordPress**: Implementation of React based on the Kinsta guide and @wordpress/script documentation.
+- **Custom Design**: Unique styling for the header, footer, and dashboard components.
+- **API Integration**: Dynamic URL queries and security features were implemented.
+- **User-Friendly Interface**: Intuitive design with quick start points, user information, and additional functionalities.
 
-## Entwicklungsfortschritte
+## Development Progress
 
 ### React in WordPress
-- Recherche zu React-Integration in WordPress.
-  - Gefundene Anleitung: [Kinsta](https://kinsta.com/de/blog/wordpress-react-theme/).
-- Erste Umsetzungen basierend auf der Anleitung von Kinsta und der Dokumentation von @wordpress/script.
-- Probleme bei der Seitenerstellung wurden behoben.
-- SCSS erfolgreich integriert.
-- `variablen.scss` besser eingebunden, um Wiederverwendbarkeit und Konsistenz zu gewährleisten.
-- Einfaches Styling für grundlegende Elemente wie Buttons und Container implementiert.
+- Research on React integration in WordPress.
+  - Guide found: [Kinsta](https://kinsta.com/blog/wordpress-react-theme/).
+- Initial implementations based on the Kinsta guide and @wordpress/script documentation.
+- Resolved issues related to page creation.
+- Successfully integrated SCSS.
+- Improved inclusion of `variables.scss` for reusability and consistency.
+- Implemented basic styling for elements such as buttons and containers.
 
-### Header und Footer
-- Neue Dateien für Header und Footer erstellt.
-- Fehler beim Einbinden der Dateien behoben.
-- Styling entwickelt.
-- Integration in die `App.js` vorgenommen.
+### Header and Footer
+- Created new files for the header and footer.
+- Fixed issues during file integration.
+- Developed styling.
+- Integrated into `App.js`.
 
 ### API
-- Nach einer Anleitung wurde eine API erstellt.
-- Dynamische URL-Abfrage hinzugefügt.
-- Sicherheitsfunktionen integriert.
+- Created an API based on a guide.
+- Added dynamic URL queries.
+- Integrated security features.
 
 ### Dashboard
-- Erste Skizzen der Idee erstellt.
-- Fehlende weitere Komponenten identifiziert und geplant.
-- Dateien zur Strukturierung angelegt.
-- Design aufgebaut.
-- Rollen- und Benutzerinformationen verarbeitet.
-- Schnellstartpunkte implementiert.
-- Fake-Daten für Beiträge und Kommentare eingebunden.
-- Ein leichtes und intuitives Design entwickelt.
+- Created initial sketches of the idea.
+- Identified and planned missing components.
+- Structured files.
+- Developed the design.
+- Processed roles and user information.
+- Implemented quick start points.
+- Integrated fake data for posts and comments.
+- Designed a lightweight and intuitive interface.
 
-## Ressourcen
+## Resources
 
 ### Websites
-1. **[Eigene WordPress-Dashboard-Widgets erstellen](https://pressengers.de/tipps/individuelle-wordpress-dashboard-widgets/)**  
-   Anleitung zur Erstellung individueller Widgets.
-2. **[Anpassen des WordPress Admin Dashboards (6 Tipps)](https://www.wpbeginner.com/de/beginners-guide/how-to-customize-wordpress-admin-area-dashboard-for-beginners/)**  
-   Leitfaden zur Anpassung des WordPress-Adminbereichs.
-3. **[Wie man ein benutzerdefiniertes WordPress-Dashboard erstellt](https://kinsta.com/de/blog/benutzerdefiniertes-wordpress-dashboard/)**  
-   Umfassende Anleitung zur individuellen Gestaltung des Dashboards.
+1. **[Creating Custom WordPress Dashboard Widgets](https://pressengers.de/tipps/individuelle-wordpress-dashboard-widgets/)**  
+   Guide for creating custom widgets.
+2. **[How to Customize the WordPress Admin Dashboard (6 Tips)](https://www.wpbeginner.com/beginners-guide/how-to-customize-wordpress-admin-area-dashboard-for-beginners/)**  
+   Guide for customizing the WordPress admin area.
+3. **[How to Create a Custom WordPress Dashboard](https://kinsta.com/blog/custom-wordpress-dashboard/)**  
+   Comprehensive guide for designing a custom dashboard.
 
-### GitHub-Repositories
-1. **[WordPress Dashboard-Themen](https://github.com/topics/wordpress-dashboard)**  
-   Sammlung von Repositories zur Entwicklung und Anpassung des Dashboards.
+### GitHub Repositories
+1. **[WordPress Dashboard Topics](https://github.com/topics/wordpress-dashboard)**  
+   Collection of repositories for developing and customizing dashboards.
 
 ### Videos
-1. **[Eigene DASHBOARD WIDGETS in WORDPRESS erstellen (OHNE Plugin)](https://www.youtube.com/watch?v=auW5gaG6AUM)**  
-   Video-Anleitung zur Erstellung benutzerdefinierter Widgets.
+1. **[Create Your Own DASHBOARD WIDGETS in WORDPRESS (WITHOUT Plugin)](https://www.youtube.com/watch?v=auW5gaG6AUM)**  
+   Video tutorial on creating custom widgets.
 
 ---
 
-Speicherung des bevorzugten Designs (dunkel, hell) in einem Cookie geplant:
-  - Beim Laden der Seite soll geprüft werden, ob ein Cookie mit dem Namen `theme-preference` existiert.
-  - Falls vorhanden, soll das gespeicherte Design angewendet werden (dunkel oder hell).
-  - Der Nutzer soll das Design manuell ändern können, und die Auswahl wird im Cookie gespeichert.
-  - Umsetzung soll mit JavaScript und der `document.cookie`-API erfolgen.
-
-## Anforderungen und fehlende Informationen
-Ich werde jetzt die Übereinstimmung mit den ursprünglichen Anforderungen prüfen.
+Planned implementation of preferred design (dark, light) using cookies:
+  - When the page loads, it should check if a cookie named `theme-preference` exists.
+  - If found, the saved theme (dark or light) should be applied.
+  - Users should be able to manually change the theme, and their choice will be saved in the cookie.
+  - Implementation will use JavaScript and the `document.cookie` API.
