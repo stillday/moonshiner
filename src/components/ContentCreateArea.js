@@ -5,7 +5,7 @@ const actions = {
         { id: "1", label: "Beitrag erstellen", url: "/wp-admin/post-new.php", icon: "dashicons-edit" },
         { id: "2", label: "Seiten erstellen", url: "/wp-admin/post-new.php?post_type=page", icon: "dashicons-admin-page" },
         { id: "3", label: "Medien hinzufügen", url: "/wp-admin/media-new.php", icon: "dashicons-admin-media" },
-        { id: "4", label: "Benutzer hinzufügen", url: "/wp-admin/user-new.php", icon: "dashicons-admin-users" },
+        { id: "4", label: "User hinzufügen", url: "/wp-admin/user-new.php", icon: "dashicons-admin-users" },
         { id: "5", label: "Kommentare", url: "/wp-admin/edit-comments.php", icon: "dashicons-admin-comments" },
         { id: "6", label: "Alle Beiträge", url: "/wp-admin/edit.php", icon: "dashicons-admin-post" },
         { id: "7", label: "Themes", url: "/wp-admin/themes.php", icon: "dashicons-admin-appearance" },
@@ -38,10 +38,7 @@ class ContentCreateArea extends Component {
     };
 
     render() {
-        console.log('props', this.props);
-        console.log('user?', window?.wpApiSettings?.roles);
         const userRole = window?.wpApiSettings?.roles;
-        console.log(userRole);
 
         const userActions = actions[userRole] || actions.guest;
 
