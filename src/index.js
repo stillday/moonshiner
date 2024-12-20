@@ -3,8 +3,6 @@ import { createRoot, createElement } from '@wordpress/element';
 import App from './App';
 import Dashboard from './Dashboard';
 
-console.log('index.js');
-
 const rootElement = document.getElementById('app');
 const isDashboard = rootElement && rootElement.dataset.context === 'dashboard';
 
