@@ -44,6 +44,7 @@ The goal of this project is to develop a tailored dashboard for WordPress, creat
 - Implemented quick start points.
 - Integrated fake data for posts and comments.
 - Designed a lightweight and intuitive interface.
+![sketch from the idea](/assets/idee.jpg)
 
 ## Resources
 
